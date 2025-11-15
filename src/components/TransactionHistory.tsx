@@ -405,13 +405,13 @@ const TransactionHistory = () => {
   const getTransactionIcon = (type: string) => {
     switch (type) {
       case 'swap':
-        return <ArrowUpDown className="w-3 h-3 sm:w-4 sm:h-4" style={{ color: "#836EF9" }} />
+        return <ArrowUpDown className="w-3 h-3 sm:w-4 sm:h-4" style={{ color: "#FFFFFF" }} />
       case 'add_liquidity':
         return <Plus className="w-3 h-3 sm:w-4 sm:h-4" style={{ color: "#10B981" }} />
       case 'remove_liquidity':
         return <Minus className="w-3 h-3 sm:w-4 sm:h-4" style={{ color: "#EF4444" }} />
       default:
-        return <ArrowUpDown className="w-3 h-3 sm:w-4 sm:h-4" style={{ color: "rgba(251, 250, 249, 0.7)" }} />
+        return <ArrowUpDown className="w-3 h-3 sm:w-4 sm:h-4" style={{ color: "rgba(255, 255, 255, 0.7)" }} />
     }
   }
 
@@ -557,8 +557,8 @@ const TransactionHistory = () => {
                 <div className="flex items-center gap-3 sm:gap-4 flex-1">
                   <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center border"
                     style={{
-                      backgroundColor: "rgba(131, 110, 249, 0.1)",
-                      borderColor: "rgba(131, 110, 249, 0.3)"
+                      backgroundColor: "rgba(255, 255, 255, 0.05)",
+                      borderColor: "rgba(255, 255, 255, 0.2)"
                     }}
                   >
                     {getTransactionIcon(tx.type)}
@@ -606,7 +606,7 @@ const TransactionHistory = () => {
 
                   {/* External Link */}
                   <a
-                    href={`https://testnet.monadexplorer.com/tx/${tx.hash}`}
+                    href={`https://sepolia-blockscout.lisk.com/tx/${tx.hash}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-lg hover:bg-white/10 transition-colors"
@@ -626,8 +626,8 @@ const TransactionHistory = () => {
                 onClick={loadMoreTransactions}
                 className="px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-medium transition-all duration-300 hover:scale-105 btn-primary text-sm sm:text-base"
                 style={{
-                  background: "linear-gradient(135deg, rgba(131, 110, 249, 0.2), rgba(160, 5, 93, 0.2))",
-                  border: "1px solid rgba(131, 110, 249, 0.3)",
+                  background: "linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05))",
+                  border: "1px solid rgba(255, 255, 255, 0.2)",
                   color: "#FBFAF9"
                 }}
               >
@@ -657,7 +657,7 @@ const TransactionHistory = () => {
                 backgroundColor: "rgba(14, 16, 15, 0.3)",
                 borderColor: "rgba(251, 250, 249, 0.1)"
               }}>
-                <div className="text-xl sm:text-2xl font-bold mb-1" style={{ color: "#836EF9" }}>
+                <div className="text-xl sm:text-2xl font-bold mb-1" style={{ color: "#FFFFFF" }}>
                   {transactions.filter(tx => tx.type === 'swap').length}
                 </div>
                 <div className="text-xs sm:text-sm" style={{ color: "rgba(251, 250, 249, 0.7)" }}>

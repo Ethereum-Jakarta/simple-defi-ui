@@ -1,18 +1,18 @@
-# 🚀 Nad Trade
+# 🚀 Lisk Trade
 
-**Simple Decentralized Exchange Frontend on Monad Network**
+**Simple Decentralized Exchange Frontend on Lisk Sepolia Testnet**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![React](https://img.shields.io/badge/React-18.0+-61DAFB.svg)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6.svg)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-5.0+-646CFF.svg)](https://vitejs.dev/)
-[![Monad](https://img.shields.io/badge/Network-Monad-6366f1.svg)](https://monad.xyz/)
+[![Lisk](https://img.shields.io/badge/Network-Lisk-6366f1.svg)](https://lisk.com/)
 
 > **Intuitive web interface for decentralized token trading**
 
 ## 📖 Overview
 
-Nad Trade is a modern, responsive frontend application for interacting with a simple DEX on Monad Network. Built with React and TypeScript, it provides an intuitive interface for token swapping, liquidity management, and real-time market data visualization.
+Lisk Trade is a modern, responsive frontend application for interacting with a simple DEX on Lisk Sepolia Testnet. Built with React and TypeScript, it provides an intuitive interface for token swapping, liquidity management, and real-time market data visualization.
 
 ### ✨ Key Features
 
@@ -22,7 +22,7 @@ Nad Trade is a modern, responsive frontend application for interacting with a si
 - 🎨 **Modern UI/UX** - Clean, responsive design with dark/light themes
 - 🔗 **Wallet Integration** - Connect with MetaMask and other Web3 wallets
 - 📱 **Mobile Responsive** - Optimized for all device sizes
-- ⚡ **Fast Transactions** - Optimized for Monad's high-speed blockchain
+- ⚡ **Fast Transactions** - Optimized for Lisk's high-speed blockchain
 
 ## 🏗️ Tech Stack
 
@@ -57,13 +57,13 @@ Frontend Architecture
 - **Node.js** v18+ 
 - **npm** or **yarn**
 - **Web3 Wallet** (MetaMask recommended)
-- **Monad Testnet** setup in wallet
+- **Lisk Sepolia Testnet** setup in wallet
 
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/nad-trade-frontend.git
-cd nad-trade-frontend
+git clone https://github.com/yourusername/lisk-trade-frontend.git
+cd lisk-trade-frontend
 ```
 
 ### 2. Install Dependencies
@@ -82,9 +82,9 @@ cp .env.example .env.local
 ```
 
 ```env
-VITE_CHAIN_ID=10143
-VITE_RPC_URL=https://testnet-rpc.monad.xyz
-VITE_EXPLORER_URL=https://testnet.monadexplorer.com
+VITE_CHAIN_ID=4202
+VITE_RPC_URL=https://rpc.sepolia-api.lisk.com
+VITE_EXPLORER_URL=https://sepolia-blockscout.lisk.com
 ```
 
 ### 4. Start Development Server
@@ -133,7 +133,7 @@ yarn build
 
 ## 🛠️ Smart Contract Integration
 
-### Contract Addresses (Monad Testnet)
+### Contract Addresses (Lisk Sepolia Testnet)
 
 | Contract | Address | Purpose |
 |----------|---------|---------|
@@ -213,7 +213,7 @@ export const DEX_CONFIG = {
 ### Project Structure
 
 ```
-nad-trade-frontend/
+lisk-trade-frontend/
 ├── public/                 # Static assets
 ├── src/
 │   ├── components/         # Reusable UI components
@@ -315,7 +315,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- **Monad Network** - For the high-performance blockchain
+- **Lisk Network** - For the high-performance blockchain
 - **React Team** - For the amazing frontend framework
 - **Ethers.js** - For Web3 integration
 - **Vite** - For the fast build tool
@@ -325,9 +325,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Documentation**: [View Docs](https://docs.nad-trade.com)
-- **Discord**: [Join Community](https://discord.gg/nad-trade)
-- **Twitter**: [@NadTrade](https://twitter.com/nadtrade)
-- **Email**: support@nad-trade.com
+- **Documentation**: [View Docs](https://docs.lisk-trade.com)
+- **Discord**: [Join Community](https://discord.gg/lisk-trade)
+- **Twitter**: [@LiskTrade](https://twitter.com/lisktrade)
+- **Email**: support@lisk-trade.com
 
-**Built with ❤️ for the Monad ecosystem**
+**Built with ❤️ for the Lisk ecosystem**

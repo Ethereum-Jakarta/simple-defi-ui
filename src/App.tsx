@@ -16,27 +16,27 @@ import {
 import { Toaster } from "react-hot-toast";
 import DEXContainer from "./components/DEXContainer";
 
-// Konfigurasi Chain Monad Testnet
-const monadTestnet: Chain = {
-  id: 10143,
-  name: 'Monad Testnet',
+// Konfigurasi Chain Lisk Sepolia Testnet
+const liskSepoliaTestnet: Chain = {
+  id: 4202,
+  name: 'Lisk Sepolia Testnet',
   nativeCurrency: {
     decimals: 18,
-    name: 'MON',
-    symbol: 'MON',
+    name: 'ETH',
+    symbol: 'ETH',
   },
   rpcUrls: {
     default: {
-      http: ['https://testnet-rpc.monad.xyz/'],
+      http: ['https://rpc.sepolia-api.lisk.com'],
     },
     public: {
-      http: ['https://testnet-rpc.monad.xyz/'],
+      http: ['https://rpc.sepolia-api.lisk.com'],
     },
   },
   blockExplorers: {
     default: {
-      name: 'MonadScan',
-      url: 'https://testnet.monadexplorer.com',
+      name: 'Lisk Blockscout',
+      url: 'https://sepolia-blockscout.lisk.com',
     },
   },
   testnet: true,
@@ -46,7 +46,7 @@ const monadTestnet: Chain = {
 export const config = getDefaultConfig({
   appName: 'Simple DEX',
   projectId: 'YOUR_WALLETCONNECT_PROJECT_ID', // Dapatkan dari https://cloud.walletconnect.com
-  chains: [monadTestnet],
+  chains: [liskSepoliaTestnet],
   ssr: true,
 });
 

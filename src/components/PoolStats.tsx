@@ -122,11 +122,11 @@ const PoolStats = () => {
           />
           
           <StatCard
-            icon={<Activity className="w-5 h-5" style={{ color: "#836EF9" }} />}
+            icon={<Activity className="w-5 h-5" style={{ color: "#FFFFFF" }} />}
             title="24h Volume"
             value={`${formatLargeNumber(volume24h)}`}
             subtitle="Estimated trading"
-            color="#836EF9"
+            color="#FFFFFF"
             isLoading={isLoading}
           />
         </div>
@@ -134,11 +134,11 @@ const PoolStats = () => {
         {/* Bottom Row - Price and APR */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <StatCard
-            icon={<TrendingUp className="w-5 h-5" style={{ color: "#A0055D" }} />}
+            icon={<TrendingUp className="w-5 h-5" style={{ color: "#FFFFFF" }} />}
             title="CAMP Price"
             value={`${formatNumber(currentPrice, 6)}`}
             subtitle="USDC per CAMP"
-            color="#A0055D"
+            color="#FFFFFF"
             isLoading={isLoading}
           />
           
@@ -189,16 +189,16 @@ const PoolStats = () => {
                 className="h-2 rounded-full transition-all duration-700 ease-out relative"
                 style={{ 
                   width: totalTVL > 0 ? `${(campValue / totalTVL) * 100}%` : '50%',
-                  background: "linear-gradient(to right, #836EF9, #9F7AEA)"
+                  background: "linear-gradient(to right, #FFFFFF, #CCCCCC)"
                 }}
               >
                 <div
                   className="absolute inset-0 rounded-full"
-                  style={{ background: "linear-gradient(to right, rgba(131, 110, 249, 0.3), transparent)" }}
+                  style={{ background: "linear-gradient(to right, rgba(255, 255, 255, 0.2), transparent)" }}
                 ></div>
               </div>
             </div>
-            <div className="text-center text-sm" style={{ color: "rgba(251, 250, 249, 0.6)" }}>
+            <div className="text-center text-sm" style={{ color: "rgba(255, 255, 255, 0.6)" }}>
               {totalTVL > 0 ? `${((campValue / totalTVL) * 100).toFixed(1)}%` : '50%'} of pool
             </div>
           </div>
@@ -232,16 +232,16 @@ const PoolStats = () => {
                 className="h-2 rounded-full transition-all duration-700 ease-out relative"
                 style={{ 
                   width: totalTVL > 0 ? `${(usdcValue / totalTVL) * 100}%` : '50%',
-                  background: "linear-gradient(to right, #A0055D, #C53030)"
+                  background: "linear-gradient(to right, #CCCCCC, #999999)"
                 }}
               >
                 <div
                   className="absolute inset-0 rounded-full"
-                  style={{ background: "linear-gradient(to right, rgba(160, 5, 93, 0.3), transparent)" }}
+                  style={{ background: "linear-gradient(to right, rgba(255, 255, 255, 0.2), transparent)" }}
                 ></div>
               </div>
             </div>
-            <div className="text-center text-sm" style={{ color: "rgba(251, 250, 249, 0.6)" }}>
+            <div className="text-center text-sm" style={{ color: "rgba(255, 255, 255, 0.6)" }}>
               {totalTVL > 0 ? `${((usdcValue / totalTVL) * 100).toFixed(1)}%` : '50%'} of pool
             </div>
           </div>
@@ -278,10 +278,10 @@ const PoolStats = () => {
             <div className="font-semibold mb-1" style={{ color: "#FBFAF9" }}>
               Trading Fee
             </div>
-            <div className="text-2xl font-bold" style={{ color: "#836EF9" }}>
+            <div className="text-2xl font-bold" style={{ color: "#FFFFFF" }}>
               0.3%
             </div>
-            <div className="text-sm" style={{ color: "rgba(251, 250, 249, 0.7)" }}>
+            <div className="text-sm" style={{ color: "rgba(255, 255, 255, 0.7)" }}>
               Per transaction
             </div>
           </div>
@@ -290,13 +290,13 @@ const PoolStats = () => {
         <div className="glass rounded-xl p-6 border border-white/10">
           <div className="text-center">
             <div className="text-3xl mb-2">🏦</div>
-            <div className="font-semibold mb-1" style={{ color: "#FBFAF9" }}>
+            <div className="font-semibold mb-1" style={{ color: "#FFFFFF" }}>
               Protocol
             </div>
-            <div className="text-2xl font-bold" style={{ color: "#A0055D" }}>
-              NadTrade
+            <div className="text-2xl font-bold" style={{ color: "#FFFFFF" }}>
+              LiskTrade
             </div>
-            <div className="text-sm" style={{ color: "rgba(251, 250, 249, 0.7)" }}>
+            <div className="text-sm" style={{ color: "rgba(255, 255, 255, 0.7)" }}>
               AMM Protocol
             </div>
           </div>
@@ -305,13 +305,13 @@ const PoolStats = () => {
         <div className="glass rounded-xl p-6 border border-white/10">
           <div className="text-center">
             <div className="text-3xl mb-2">🌐</div>
-            <div className="font-semibold mb-1" style={{ color: "#FBFAF9" }}>
+            <div className="font-semibold mb-1" style={{ color: "#FFFFFF" }}>
               Network
             </div>
             <div className="text-2xl font-bold" style={{ color: "#10B981" }}>
-              Monad
+              Lisk Sepolia
             </div>
-            <div className="text-sm" style={{ color: "rgba(251, 250, 249, 0.7)" }}>
+            <div className="text-sm" style={{ color: "rgba(255, 255, 255, 0.7)" }}>
               Testnet
             </div>
           </div>

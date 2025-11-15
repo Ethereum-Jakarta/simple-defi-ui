@@ -32,8 +32,8 @@ const DEXContainer = () => {
           : 'glass hover:bg-white/10'
       }`}
       style={{
-        color: activeTab === id ? "#FBFAF9" : "rgba(251, 250, 249, 0.8)",
-        border: activeTab === id ? "1px solid rgba(131, 110, 249, 0.5)" : "1px solid rgba(251, 250, 249, 0.1)"
+        color: activeTab === id ? "#FFFFFF" : "rgba(255, 255, 255, 0.7)",
+        border: activeTab === id ? "1px solid rgba(255, 255, 255, 0.4)" : "1px solid rgba(255, 255, 255, 0.1)"
       }}
     >
       <div className="flex-shrink-0">
@@ -51,23 +51,23 @@ const DEXContainer = () => {
       <main className="min-h-screen flex items-center justify-center px-6">
         <div className="glass card-hover rounded-2xl p-12 max-w-2xl mx-auto text-center">
           <div className="text-8xl mb-6 float-animation">
-            <img src="/nad-trade-logo.png" alt="Nad Trade Logo" className="w-24 h-24 mx-auto mb-4" />
+            <img src="/nad-trade-logo.png" alt="Lisk Trade Logo" className="w-24 h-24 mx-auto mb-4" />
           </div>
           <h2 className="text-4xl font-bold mb-6 text-gradient-monad font-inter">
-            Welcome to Nad Trade
+            Welcome to Lisk Trade
           </h2>
-          <p className="mb-8 text-lg leading-relaxed max-w-lg mx-auto" style={{ color: "rgba(251, 250, 249, 0.8)" }}>
-            The most intuitive decentralized exchange on Monad. Swap tokens, provide liquidity, and earn rewards with minimal fees and maximum efficiency.
+          <p className="mb-8 text-lg leading-relaxed max-w-lg mx-auto" style={{ color: "rgba(255, 255, 255, 0.8)" }}>
+            The most intuitive decentralized exchange on Lisk. Swap tokens, provide liquidity, and earn rewards with minimal fees and maximum efficiency.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div className="p-6 rounded-xl border" style={{
-              backgroundColor: "rgba(131, 110, 249, 0.1)",
-              borderColor: "rgba(131, 110, 249, 0.3)"
+              backgroundColor: "rgba(255, 255, 255, 0.05)",
+              borderColor: "rgba(255, 255, 255, 0.2)"
             }}>
-              <TrendingUp className="w-8 h-8 mx-auto mb-3" style={{ color: "#836EF9" }} />
-              <h3 className="font-semibold mb-2" style={{ color: "#FBFAF9" }}>Instant Swaps</h3>
-              <p className="text-sm" style={{ color: "rgba(251, 250, 249, 0.7)" }}>
+              <TrendingUp className="w-8 h-8 mx-auto mb-3" style={{ color: "#FFFFFF" }} />
+              <h3 className="font-semibold mb-2" style={{ color: "#FFFFFF" }}>Instant Swaps</h3>
+              <p className="text-sm" style={{ color: "rgba(255, 255, 255, 0.7)" }}>
                 Trade tokens instantly with minimal slippage
               </p>
             </div>
@@ -77,19 +77,19 @@ const DEXContainer = () => {
               borderColor: "rgba(16, 185, 129, 0.3)"
             }}>
               <Droplets className="w-8 h-8 mx-auto mb-3" style={{ color: "#10B981" }} />
-              <h3 className="font-semibold mb-2" style={{ color: "#FBFAF9" }}>Earn Rewards</h3>
-              <p className="text-sm" style={{ color: "rgba(251, 250, 249, 0.7)" }}>
+              <h3 className="font-semibold mb-2" style={{ color: "#FFFFFF" }}>Earn Rewards</h3>
+              <p className="text-sm" style={{ color: "rgba(255, 255, 255, 0.7)" }}>
                 Provide liquidity and earn trading fees
               </p>
             </div>
             
             <div className="p-6 rounded-xl border" style={{
-              backgroundColor: "rgba(160, 5, 93, 0.1)",
-              borderColor: "rgba(160, 5, 93, 0.3)"
+              backgroundColor: "rgba(255, 255, 255, 0.05)",
+              borderColor: "rgba(255, 255, 255, 0.2)"
             }}>
-              <BarChart3 className="w-8 h-8 mx-auto mb-3" style={{ color: "#A0055D" }} />
-              <h3 className="font-semibold mb-2" style={{ color: "#FBFAF9" }}>Low Fees</h3>
-              <p className="text-sm" style={{ color: "rgba(251, 250, 249, 0.7)" }}>
+              <BarChart3 className="w-8 h-8 mx-auto mb-3" style={{ color: "#FFFFFF" }} />
+              <h3 className="font-semibold mb-2" style={{ color: "#FFFFFF" }}>Low Fees</h3>
+              <p className="text-sm" style={{ color: "rgba(255, 255, 255, 0.7)" }}>
                 Only 0.3% trading fee on all swaps
               </p>
             </div>
@@ -98,24 +98,24 @@ const DEXContainer = () => {
           <div className="flex justify-center items-center space-x-8 text-sm mb-8">
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 rounded-full animate-pulse" style={{ backgroundColor: "#10B981" }}></div>
-              <span style={{ color: "rgba(251, 250, 249, 0.8)" }}>Live on Monad Testnet</span>
+              <span style={{ color: "rgba(255, 255, 255, 0.8)" }}>Live on Lisk Sepolia Testnet</span>
             </div>
             <div className="flex items-center space-x-2">
-              <span style={{ color: "rgba(251, 250, 249, 0.8)" }}>Powered by AMM</span>
+              <span style={{ color: "rgba(255, 255, 255, 0.8)" }}>Powered by AMM</span>
             </div>
           </div>
 
           <div className="text-center">
-            <p className="text-lg font-medium mb-4" style={{ color: "#836EF9" }}>
+            <p className="text-lg font-medium mb-4" style={{ color: "#FFFFFF" }}>
               Connect your wallet to get started
             </p>
             <div className="flex justify-center items-center space-x-4 text-sm">
-              <span style={{ color: "rgba(251, 250, 249, 0.6)" }}>Supported:</span>
-              <span style={{ color: "#FBFAF9" }}>MetaMask</span>
-              <span style={{ color: "rgba(251, 250, 249, 0.6)" }}>•</span>
-              <span style={{ color: "#FBFAF9" }}>WalletConnect</span>
-              <span style={{ color: "rgba(251, 250, 249, 0.6)" }}>•</span>
-              <span style={{ color: "#FBFAF9" }}>Coinbase Wallet</span>
+              <span style={{ color: "rgba(255, 255, 255, 0.6)" }}>Supported:</span>
+              <span style={{ color: "#FFFFFF" }}>MetaMask</span>
+              <span style={{ color: "rgba(255, 255, 255, 0.6)" }}>•</span>
+              <span style={{ color: "#FFFFFF" }}>WalletConnect</span>
+              <span style={{ color: "rgba(255, 255, 255, 0.6)" }}>•</span>
+              <span style={{ color: "#FFFFFF" }}>Coinbase Wallet</span>
             </div>
           </div>
         </div>
