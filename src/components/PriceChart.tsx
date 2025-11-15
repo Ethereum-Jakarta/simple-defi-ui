@@ -47,7 +47,6 @@ const PriceChart = () => {
   
   // Fetch data from indexer for analytics
   const { data: recentSwaps } = useRecentSwaps()
-  console.log(recentSwaps)
   const { data: userStats } = useUserStats(address)
   const { data: dailyVolume, isLoading: volumeLoading } = useDailyVolume(7)
   const { data: indexerHealth } = useIndexerHealth()
