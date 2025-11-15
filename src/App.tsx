@@ -15,6 +15,8 @@ import {
 } from "@tanstack/react-query";
 import { Toaster } from "react-hot-toast";
 import DEXContainer from "./components/DEXContainer";
+import { ApolloProvider } from '@apollo/client/react';
+import { apolloClient } from './lib/graphql';
 
 // Konfigurasi Chain Lisk Sepolia Testnet
 const liskSepoliaTestnet: Chain = {
@@ -35,7 +37,7 @@ const liskSepoliaTestnet: Chain = {
   },
   blockExplorers: {
     default: {
-      name: 'Lisk Blockscout',
+      name: 'Lisk Sepolia Blockscout',
       url: 'https://sepolia-blockscout.lisk.com',
     },
   },
@@ -54,15 +56,18 @@ function App() {
   const queryClient = new QueryClient();
   return (
     <WagmiProvider config={config}>
-      <QueryClientProvider client={queryClient}>
-        <RainbowKitProvider>
-          <div className="min-h-screen">
-            <Header />
-            <DEXContainer />
-          </div>
-          <Toaster position="top-center" />
-        </RainbowKitProvider>
-      </QueryClientProvider>
+      <ApolloProvider client={apolloClient}>
+        <QueryClientProvider client={queryClient}>
+          <RainbowKitProvider>
+            <div className="min-h-screen">
+              <Header />
+              <DEXContainer />
+            </div>
+            <Toaster position="top-center" />
+          </RainbowKitProvider>
+        </QueryClientProvider>
+      </ApolloProvider>
+     
     </WagmiProvider>
   )
 }
